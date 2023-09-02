@@ -50,6 +50,7 @@ public class BienvenidosController {
     private static final String USUARIOS_PATH="/Proyecto2p/usuarios.txt";
     private static final String PEDIDOS_PATH="/Proyecto2p/pedidos.txt";
     public void initialize(Usuario usuario){
+        System.out.println("hola");
         Image image=new Image(getClass().getResourceAsStream("/Proyecto2p/bienvenidosfondo.jpg"));
         imagenfondo.setImage(image);
         switch(usuario.getGenero()){
