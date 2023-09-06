@@ -6,7 +6,7 @@ package Proyecto2p;
 
 /**
  *
- * @author Dario Anchundia Cobo
+ * @author Thomas Burgos
  */
 public class Starter {
     public static void main(String[] args){
