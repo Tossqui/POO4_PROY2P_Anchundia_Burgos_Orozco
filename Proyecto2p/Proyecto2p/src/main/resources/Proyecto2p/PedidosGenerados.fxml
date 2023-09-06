@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="rootpedidos" prefHeight="350.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="Proyecto2p.PedidosGeneradosController">
+   <children>
+      <ListView fx:id="lvpedidos" prefHeight="350.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>

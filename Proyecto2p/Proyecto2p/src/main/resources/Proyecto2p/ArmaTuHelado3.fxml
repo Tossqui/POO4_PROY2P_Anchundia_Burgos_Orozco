@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="roothaztuhelado3" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto2p.ArmaTuHelado3Controller">
+   <children>
+      <ImageView fx:id="imgvfondo" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox fx:id="vb" prefHeight="400.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label fx:id="lbltitulo" alignment="BOTTOM_LEFT" prefHeight="90.0" prefWidth="520.0" text="Paso 3: Elige los toppings :" textFill="#7300ff">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <HBox fx:id="hbtoppings" prefHeight="200.0" prefWidth="540.0">
+               <children>
+                  <VBox fx:id="vbtoppings1" prefHeight="200.0" prefWidth="270.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="check1" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check2" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check3" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check4" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check5" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check6" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check7" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check8" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                     </children></VBox>
+                  <VBox fx:id="vbtoppings2" prefHeight="200.0" prefWidth="270.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="check9" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check10" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check11" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check12" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check13" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check14" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check15" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                        <CheckBox fx:id="check16" mnemonicParsing="false" text="CheckBox" visible="false" disable="true" />
+                     </children></VBox>
+               </children></HBox>
+            <HBox fx:id="hbfinal" prefHeight="30.0" prefWidth="570.0" spacing="350.0">
+               <children>
+                  <Label fx:id="lblvalorapagar" text="Valor a pagar: 0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btncontinuar" mnemonicParsing="false" prefWidth="72.0" style="-fx-background-color: linear-gradient(to bottom, #ffde59, #ff914d);" text="Continuar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

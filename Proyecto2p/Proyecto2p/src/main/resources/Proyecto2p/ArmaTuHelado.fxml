@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootArmaTuHelado" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto2p.ArmaTuHeladoController">
+    <children>
+        <ImageView fx:id="imagenDeFondo" fitHeight="400.0" fitWidth="600.0" preserveRatio="false" />
+        <VBox fx:id="contenedorPrincipal" prefHeight="400.0" prefWidth="600.0" spacing="30.0">
+            <Label fx:id="tituloLabel" alignment="BOTTOM_LEFT" prefHeight="90.0" prefWidth="520.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Paso 1: Escoge tu base:" textFill="#7300ff">
+            <padding>
+               <Insets right="20.0" />
+            </padding>
+            <VBox.margin>
+               <Insets right="20.0" />
+            </VBox.margin>
+            <font>
+               <Font size="36.0" />
+            </font></Label>
+            <HBox fx:id="hbopciones" prefHeight="120.0" prefWidth="570.0" spacing="15.0">
+                <VBox fx:id="vbop1">
+               <HBox fx:id="hbimgv1" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #FFF0FFFF;">
+                  <children>
+                          <ImageView fx:id="imagenOpcion1" fitHeight="100.0" fitWidth="80.0" />
+                     <Label fx:id="lblimgv1" prefHeight="200.0" text="Label" />
+                  </children>
+               </HBox>
+                    <Label fx:id="lblop1" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="240.0" text="Precio: $10" />
+                </VBox>
+                <VBox fx:id="vbop2">
+               <HBox fx:id="hbimgv2" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #FFF0FFFF;">
+                  <children>
+                          <ImageView fx:id="imagenOpcion2" fitHeight="100.0" fitWidth="80.0" />
+                     <Label fx:id="lblimgv2" prefHeight="200.0" text="Label" />
+                  </children>
+               </HBox>
+                    <Label fx:id="lblop2" alignment="CENTER" prefHeight="17.0" prefWidth="240.0" text="Precio: $15" />
+                </VBox>
+                <VBox fx:id="vbop3">
+               <HBox fx:id="hbimgv3" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #FFF0FFFF;">
+                  <children>
+                          <ImageView fx:id="imagenOpcion3" fitHeight="100.0" fitWidth="80.0" />
+                     <Label fx:id="lblimgv3" prefHeight="200.0" text="Label" />
+                  </children>
+               </HBox>
+                    <Label fx:id="lblop3" alignment="CENTER" prefHeight="17.0" prefWidth="240.0" text="Precio: $20" />
+                </VBox>
+            </HBox>
+            <HBox fx:id="hbcontinuar" prefHeight="70.0" prefWidth="570.0" spacing="70.0">
+                <Label fx:id="valorAPagarLabel" text="Valor a pagar: 0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="lblex" alignment="BOTTOM_LEFT" text="&quot;Debes elegir una base para continuar.&quot;" visible="false">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Label>
+                <Button fx:id="btncontinuar" style="-fx-background-color: linear-gradient(to bottom, #ffde59, #ff914d);" text="Continuar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <padding>
+               <Insets top="40.0" />
+            </padding>
+            </HBox>
+         <padding>
+            <Insets left="30.0" right="30.0" top="40.0" />
+         </padding>
+        </VBox>
+    </children>
+</AnchorPane>

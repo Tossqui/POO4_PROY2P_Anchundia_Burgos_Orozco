@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootfinal" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #E9DAFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto2p.ArmaTuHelado7Controller">
+   <children>
+      <ImageView fx:id="imgvfondo" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox fx:id="vb" prefHeight="600.0" prefWidth="600.0" spacing="10.0">
+         <padding>
+            <Insets left="30.0" right="30.0" top="40.0" />
+         </padding>
+         <children>
+            <Label fx:id="lbltitulo" alignment="BOTTOM_LEFT" prefHeight="90.0" prefWidth="520.0" text="Tu orden se ha generado" textFill="#7300ff">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblsubtitulo" text="Tu pedido es el #0000. Te llamaremos cuando esté listo.">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgvimage" fitHeight="380.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="80.0" right="80.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="lblfinal" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="540.0" text="Esta ventana se cerrará en 5 segundos...">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

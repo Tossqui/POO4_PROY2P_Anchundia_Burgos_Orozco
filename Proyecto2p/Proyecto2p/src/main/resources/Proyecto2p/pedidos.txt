@@ -1,1 +1,2 @@
-Dario Anchundia,0001
+0000,Dario Anchundia,6.00
+0001,Danielle Izquierdo,4.00

@@ -1,0 +1,3 @@
+1357,0000,Dario Anchundia,6.00,2023-09-05,C
+1567,0001,Danielle Izquierdo,4.00,2023-09-05,E
+4405,0002,Dario Anchundia,7.686,2023-09-05,C

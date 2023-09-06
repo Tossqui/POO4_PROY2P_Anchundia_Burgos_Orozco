@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="roothaztuhelado4" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto2p.ArmaTuHelado4Controller">
+   <children>
+      <ImageView fx:id="imgvfondo" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox fx:id="vb" prefHeight="400.0" prefWidth="600.0" spacing="10.0">
+         <padding>
+            <Insets left="30.0" right="30.0" top="40.0" />
+         </padding>
+         <children>
+            <Label fx:id="lbltitulo" alignment="BOTTOM_LEFT" prefHeight="90.0" prefWidth="520.0" text="Tu pedido" textFill="#7300ff">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox fx:id="hbpedido" prefHeight="200.0" prefWidth="540.0" spacing="10.0">
+               <children>
+                  <ListView fx:id="lvpedido" prefHeight="200.0" prefWidth="265.0" />
+                  <Button fx:id="btneliminar" mnemonicParsing="false" prefWidth="72.0" style="-fx-background-color: linear-gradient(to bottom, #ffde59, #ff914d);" text="Eliminar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children></HBox>
+            <HBox fx:id="hbfinal" prefHeight="30.0" prefWidth="570.0" spacing="10.0">
+               <children>
+                  <Label fx:id="lblvalorapagar" text="Valor a pagar: 0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblex" text="&quot;Debe quedar al menos 1 sabor.&quot;" visible="false">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnconfirmar" mnemonicParsing="false" style="-fx-background-color: linear-gradient(to bottom, #ffde59, #ff914d);" text="Confirmar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btncancelar" mnemonicParsing="false" style="-fx-background-color: linear-gradient(to bottom, #ffde59, #ff914d);" text="Cancelar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
