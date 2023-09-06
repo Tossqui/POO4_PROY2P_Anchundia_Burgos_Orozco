@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dario Anchundia Cobo
+ * @author Thomas Burgos
  */
 public class Sabor{
     String sabor;
