@@ -6,7 +6,7 @@ package Proyecto2p;
 
 /**
  *
- * @author Dario Anchundia Cobo
+ * @author Thomas Burgos
  */
 public interface Pagable {
     void generarTransacción(String idPedido, String nombreCliente, double totalPagar, String fecha, String tipo);
