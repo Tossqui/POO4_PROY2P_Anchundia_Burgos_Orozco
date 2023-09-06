@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Dario Anchundia Cobo
+ * @author Thomas Burgos
  */
 public class Pedido implements Serializable{
     private String idPedido;
