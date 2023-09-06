@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dario Anchundia Cobo
+ * @author Thomas Burgos
  */
 public class PedidoActual{
     Base base;
