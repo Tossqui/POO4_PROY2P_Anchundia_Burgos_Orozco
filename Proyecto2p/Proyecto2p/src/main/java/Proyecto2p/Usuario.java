@@ -8,16 +8,15 @@ package Proyecto2p;
  *
  * @author Dario Anchundia Cobo
  */
+
 public class Usuario {
     private String Nombre;
-    private String Apellido;
     private String Genero;
     private String User;
     private String Contrasena;
 
-    public Usuario(String Nombre, String Apellido, String Genero, String User, String Contrasena) {
+    public Usuario(String Nombre, String Genero, String User, String Contrasena) {
         this.Nombre = Nombre;
-        this.Apellido = Apellido;
         this.Genero = Genero;
         this.User = User;
         this.Contrasena = Contrasena;
@@ -26,11 +25,6 @@ public class Usuario {
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
-
-    public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
-    }
-
     public void setGenero(String Genero) {
         this.Genero = Genero;
     }
@@ -46,24 +40,19 @@ public class Usuario {
     public String getNombre() {
         return Nombre;
     }
-
-    public String getApellido() {
-        return Apellido;
-    }
-
     public String getGenero() {
         return Genero;
     }
-
     public String getUser() {
         return User;
     }
-
     public String getContrasena() {
         return Contrasena;
+    }  
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "Nombre=" + Nombre + ", Genero=" + Genero + ", User=" + User + ", Contrasena=" + Contrasena + '}';
     }
-    
-
-
     
 }
