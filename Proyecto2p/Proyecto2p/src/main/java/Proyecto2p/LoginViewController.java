@@ -48,7 +48,7 @@ public class LoginViewController {
     private Button btnlogin;
     @FXML
     private Label lbl;
-    public Usuario usuario=new Usuario("Nombre","Apellido","Genero","User","Contrasena");
+    public Usuario usuario=new Usuario("Nombre","Genero","User","Contrasena");
     private static final String USUARIOS_PATH="/Proyecto2p/usuarios.txt";     //path
     public void initialize(){
         Image image=new Image(getClass().getResourceAsStream("/Proyecto2p/loginfondo.jpg"));      //path
@@ -58,16 +58,16 @@ public class LoginViewController {
     private void login() throws IOException{
         String user=tfusuario.getText();
         String pass=tfcontrasena.getText();
-
         if(validarUsuario(user,pass)){
             lbl.setText("Inicio de sesión exitoso.");
             Stage stage=(Stage)tfusuario.getScene().getWindow();
             stage.close();
-            FXMLLoader loader=new FXMLLoader(getClass().getResource("Bienvenidos.fxml"));
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("/Proyecto2p/Bienvenidos.fxml"));
             Parent root=loader.load();
             BienvenidosController controlador=loader.getController();
             controlador.initialize(usuario);
             Stage segundaVentana=new Stage();
+            segundaVentana.setTitle("Bienvenidos.fxml");
             segundaVentana.setScene(new Scene(root));
             segundaVentana.show();
         }else{
@@ -80,12 +80,11 @@ public class LoginViewController {
             String line;
             while((line=br.readLine())!=null){
                 String[] datos=line.split(",");
-                if (datos.length==5&&datos[3].equals(username)&&datos[4].equals(password)){                  
+                if (datos.length==4&&datos[2].equals(username)&&datos[3].equals(password)){                  
                     usuario.setNombre(datos[0]);
-                    usuario.setApellido(datos[1]);
-                    usuario.setGenero(datos[2]);
-                    usuario.setUser(datos[3]);
-                    usuario.setContrasena(datos[4]);
+                    usuario.setGenero(datos[1]);
+                    usuario.setUser(datos[2]);
+                    usuario.setContrasena(datos[3]);
                     return true;
                 }
             }
